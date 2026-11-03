@@ -14,7 +14,7 @@ function App() {
   }, []);
 
   const rendezes = () => {
-    const rendezett = [...telefonok].sort((a, b) => {
+    const rendezett = [...telefonok].toSorted((a, b) => {
       return novekvo ? a.nev.localeCompare(b.nev) : b.nev.localeCompare(a.nev);
     });
 
